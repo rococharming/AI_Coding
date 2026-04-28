@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "232becce19fbb5e8",
+        "id": "1e5ffe72f8536b37",
         "type": "tabs",
         "children": [
           {
-            "id": "a14b20fb52aeb954",
+            "id": "86504558d4213120",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Claude Code/5、Subagent.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "5、Subagent"
+              "title": "新标签页"
             }
           }
         ]
@@ -78,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "7f84de27ab27cb4f",
@@ -94,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Claude Code/5、Subagent.md",
+                "file": "Claude Code/测试笔记1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "5、Subagent 的反向链接列表"
+              "title": "测试笔记1 的反向链接列表"
             }
           },
           {
@@ -164,13 +160,25 @@
               "icon": "lucide-list",
               "title": "1、Claude Code入门 的大纲"
             }
+          },
+          {
+            "id": "040a847e83018fa9",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "每日笑话/2026-04-29.md"
+              },
+              "icon": "lucide-info",
+              "title": "2026-04-29的笔记属性"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 383.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,17 +188,43 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false
+      "bases:新建数据库": false,
+      "workspaces:管理工作区布局": false,
+      "terminal:Open terminal": false,
+      "claudian:Open Claudian": false
     }
   },
-  "active": "a14b20fb52aeb954",
+  "active": "2f214d9719af6425",
   "lastOpenFiles": [
-    "Claude Code/3、工具.md",
+    "每日笑话.md",
+    "每日笑话/2026-04-29.md",
+    "每日笑话",
+    "Claude Code/每日笑话.md",
+    "Claude Code/最终测试.md",
+    "Claude Code/测试前台.md",
+    "Claude Code/测试激活.md",
+    "Claude Code/测试无效flag.md",
+    "Claude Code/测试有silent.md",
+    "Claude Code/测试无silent.md",
+    "CLAUDE.md",
+    "Claude Code/测试笔记1.md",
+    "Claude Code/测试笔记2.md",
+    "Claude Code/测试笔记3.md",
+    "skills-lock.json",
+    "测试笔记5.md",
+    "测试笔记4.md",
+    "测试笔记4“.md",
+    "Claude Code/1、Claude Code入门.md",
+    "未命名.md",
     "Claude Code/5、Subagent.md",
+    "assets/Pasted image 20260429003241.png",
+    "assets/image-20260427232015230.png",
+    "assets/Pasted image 20260429003057.png",
+    "附件/Pasted image 20260429002956.png",
+    "附件",
+    "Claude Code/3、工具.md",
     "工具.md",
     "内部工具.md",
-    "未命名.md",
-    "Claude Code/1、Claude Code入门.md",
     "Claude Code/未命名文件夹",
     "2.md"
   ]
