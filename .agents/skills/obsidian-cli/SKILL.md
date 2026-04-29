@@ -1,48 +1,48 @@
 ---
 name: obsidian-cli
-description: Interact with Obsidian vaults using the Obsidian CLI to read, create, search, and manage notes, tasks, properties, and more. Also supports plugin and theme development with commands to reload plugins, run JavaScript, capture errors, take screenshots, and inspect the DOM. Use when the user asks to interact with their Obsidian vault, manage notes, search vault content, perform vault operations from the command line, or develop and debug Obsidian plugins and themes.
+description: 使用 Obsidian CLI 与 Obsidian 仓库进行交互，包括读取、创建、搜索和管理笔记、任务、属性等。还支持插件和主题开发，提供重新加载插件、运行 JavaScript、捕获错误、截图和检查 DOM 等命令。当用户要求与其 Obsidian 仓库交互、管理笔记、搜索仓库内容、从命令行执行仓库操作，或开发和调试 Obsidian 插件与主题时使用。
 ---
 
 # Obsidian CLI
 
-Use the `obsidian` CLI to interact with a running Obsidian instance. Requires Obsidian to be open.
+使用 `obsidian` CLI 与运行中的 Obsidian 实例进行交互。需要 Obsidian 处于打开状态。
 
-## Command reference
+## 命令参考
 
-Run `obsidian help` to see all available commands. This is always up to date. Full docs: https://help.obsidian.md/cli
+运行 `obsidian help` 查看所有可用命令。该命令始终反映最新状态。完整文档：https://help.obsidian.md/cli
 
-## Syntax
+## 语法格式
 
-**Parameters** take a value with `=`. Quote values with spaces:
+**参数** 通过 `=` 接收值。含有空格的值需要加引号：
 
 ```bash
 obsidian create name="My Note" content="Hello world"
 ```
 
-**Flags** are boolean switches with no value:
+**标志** 是布尔开关，不需要值：
 
 ```bash
 obsidian create name="My Note" silent overwrite
 ```
 
-For multiline content use `\n` for newline and `\t` for tab.
+多行内容使用 `\n` 表示换行，`\t` 表示制表符。
 
-## File targeting
+## 文件定位
 
-Many commands accept `file` or `path` to target a file. Without either, the active file is used.
+许多命令接受 `file` 或 `path` 参数来指定目标文件。如果不提供这两个参数，则默认使用当前活动文件。
 
-- `file=<name>` — resolves like a wikilink (name only, no path or extension needed)
-- `path=<path>` — exact path from vault root, e.g. `folder/note.md`
+- `file=<名称>` — 类似 wikilink 的解析方式（只需名称，无需路径或扩展名）
+- `path=<路径>` — 从仓库根目录开始的精确路径，例如 `folder/note.md`
 
-## Vault targeting
+## 仓库定位
 
-Commands target the most recently focused vault by default. Use `vault=<name>` as the first parameter to target a specific vault:
+命令默认面向最近聚焦的仓库。使用 `vault=<名称>` 作为第一个参数来指定目标仓库：
 
 ```bash
 obsidian vault="My Vault" search query="test"
 ```
 
-## Common patterns
+## 常用模式
 
 ```bash
 obsidian read file="My Note"
@@ -57,50 +57,50 @@ obsidian tags sort=count counts
 obsidian backlinks file="My Note"
 ```
 
-Use `--copy` on any command to copy output to clipboard. Use `silent` to prevent files from opening. Use `total` on list commands to get a count.
+在任何命令上使用 `--copy` 将输出复制到剪贴板。使用 `silent` 防止文件被打开。在列表命令上使用 `total` 获取计数。
 
-## Plugin development
+## 插件开发
 
-### Develop/test cycle
+### 开发/测试循环
 
-After making code changes to a plugin or theme, follow this workflow:
+对插件或主题进行代码修改后，按以下流程操作：
 
-1. **Reload** the plugin to pick up changes:
+1. **重新加载** 插件以使更改生效：
    ```bash
    obsidian plugin:reload id=my-plugin
    ```
-2. **Check for errors** — if errors appear, fix and repeat from step 1:
+2. **检查错误** — 如果出现错误，修复后从步骤 1 重复：
    ```bash
    obsidian dev:errors
    ```
-3. **Verify visually** with a screenshot or DOM inspection:
+3. **视觉验证** — 通过截图或 DOM 检查确认效果：
    ```bash
    obsidian dev:screenshot path=screenshot.png
    obsidian dev:dom selector=".workspace-leaf" text
    ```
-4. **Check console output** for warnings or unexpected logs:
+4. **检查控制台输出** — 查看警告或意外日志：
    ```bash
    obsidian dev:console level=error
    ```
 
-### Additional developer commands
+### 其他开发者命令
 
-Run JavaScript in the app context:
+在应用上下文中运行 JavaScript：
 
 ```bash
 obsidian eval code="app.vault.getFiles().length"
 ```
 
-Inspect CSS values:
+检查 CSS 值：
 
 ```bash
 obsidian dev:css selector=".workspace-leaf" prop=background-color
 ```
 
-Toggle mobile emulation:
+切换移动端模拟：
 
 ```bash
 obsidian dev:mobile on
 ```
 
-Run `obsidian help` to see additional developer commands including CDP and debugger controls.
+运行 `obsidian help` 查看更多开发者命令，包括 CDP 和调试器控制。

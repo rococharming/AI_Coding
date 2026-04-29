@@ -4,20 +4,81 @@
     "type": "split",
     "children": [
       {
-        "id": "1e5ffe72f8536b37",
-        "type": "tabs",
+        "id": "5a07b6dac9140702",
+        "type": "split",
         "children": [
           {
-            "id": "86504558d4213120",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
-            }
+            "id": "39078c13da67f7cf",
+            "type": "tabs",
+            "dimension": 39.91228070175439,
+            "children": [
+              {
+                "id": "b73d4f397c519478",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Claude Code/3、记忆机制.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "3、记忆机制"
+                }
+              }
+            ]
+          },
+          {
+            "id": "69f0f8136af62c93",
+            "type": "tabs",
+            "dimension": 60.08771929824561,
+            "children": [
+              {
+                "id": "4d6ce1fa1575d340",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "terminal:terminal",
+                  "state": {
+                    "terminal:terminal": {
+                      "cwd": "/Users/11185032/spf/AI_Coding",
+                      "focus": false,
+                      "profile": {
+                        "args": [
+                          "--login"
+                        ],
+                        "executable": "/opt/homebrew/bin/fish",
+                        "followTheme": true,
+                        "name": "",
+                        "platforms": {
+                          "darwin": true
+                        },
+                        "pythonExecutable": "python3",
+                        "restoreHistory": false,
+                        "rightClickAction": "copyPaste",
+                        "successExitCodes": [
+                          "0",
+                          "SIGINT",
+                          "SIGTERM"
+                        ],
+                        "terminalOptions": {
+                          "documentOverride": null
+                        },
+                        "type": "integrated",
+                        "useWin32Conhost": true
+                      },
+                      "serial": null
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "terminal",
+                  "title": "终端：✳ Change Obsidian theme to dark mode"
+                }
+              }
+            ]
           }
-        ]
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -68,6 +129,20 @@
               "state": {},
               "icon": "lucide-bookmark",
               "title": "书签"
+            }
+          },
+          {
+            "id": "9ab415b5c5116e32",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
             }
           }
         ]
@@ -147,30 +222,23 @@
             }
           },
           {
-            "id": "9ab415b5c5116e32",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Claude Code/1、Claude Code入门.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "1、Claude Code入门 的大纲"
-            }
-          },
-          {
             "id": "040a847e83018fa9",
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "每日笑话/2026-04-29.md"
-              },
+              "state": {},
               "icon": "lucide-info",
-              "title": "2026-04-29的笔记属性"
+              "title": "笔记属性"
+            }
+          },
+          {
+            "id": "a4891b4f5ae43b05",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
         ],
@@ -178,10 +246,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 383.5
+    "width": 469.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -190,13 +259,18 @@
       "command-palette:打开命令面板": false,
       "bases:新建数据库": false,
       "workspaces:管理工作区布局": false,
-      "terminal:Open terminal": false,
-      "claudian:Open Claudian": false
+      "terminal:Open terminal": false
     }
   },
-  "active": "2f214d9719af6425",
+  "active": "4d6ce1fa1575d340",
   "lastOpenFiles": [
+    "Claude Code/3、记忆机制.md",
+    "Claude Code/2、Slash命令.md",
+    "Claude Code/1、Claude Code入门.md",
+    "CLAUDE.md",
+    "Claude Code/5、Subagent.md",
     "每日笑话.md",
+    "SKILL.md",
     "每日笑话/2026-04-29.md",
     "每日笑话",
     "Claude Code/每日笑话.md",
@@ -206,7 +280,6 @@
     "Claude Code/测试无效flag.md",
     "Claude Code/测试有silent.md",
     "Claude Code/测试无silent.md",
-    "CLAUDE.md",
     "Claude Code/测试笔记1.md",
     "Claude Code/测试笔记2.md",
     "Claude Code/测试笔记3.md",
@@ -214,9 +287,7 @@
     "测试笔记5.md",
     "测试笔记4.md",
     "测试笔记4“.md",
-    "Claude Code/1、Claude Code入门.md",
     "未命名.md",
-    "Claude Code/5、Subagent.md",
     "assets/Pasted image 20260429003241.png",
     "assets/image-20260427232015230.png",
     "assets/Pasted image 20260429003057.png",
