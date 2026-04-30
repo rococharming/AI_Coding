@@ -1,5 +1,6 @@
 {
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "assets",
-  "useTab": true
+  "useTab": true,
+  "showLineNumber": false
 }
