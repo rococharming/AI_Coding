@@ -4,21 +4,49 @@
     "type": "split",
     "children": [
       {
-        "id": "3659dfe8ee4272ab",
+        "id": "b3a1f994135a7e93",
         "type": "tabs",
         "children": [
           {
-            "id": "cd6b6cc920f3f0ae",
+            "id": "5c70f2afc21ea347",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "markdown",
+              "type": "terminal:terminal",
               "state": {
-                "file": "Claude Code/4、Skill.md",
-                "mode": "source",
-                "source": false
+                "terminal:terminal": {
+                  "cwd": "/Users/11185032/spf/AI_Coding",
+                  "focus": false,
+                  "profile": {
+                    "args": [
+                      "--login"
+                    ],
+                    "executable": "/opt/homebrew/bin/fish",
+                    "followTheme": true,
+                    "name": "",
+                    "platforms": {
+                      "darwin": true
+                    },
+                    "pythonExecutable": "python3",
+                    "restoreHistory": false,
+                    "rightClickAction": "copyPaste",
+                    "successExitCodes": [
+                      "0",
+                      "SIGINT",
+                      "SIGTERM"
+                    ],
+                    "terminalOptions": {
+                      "documentOverride": null
+                    },
+                    "type": "integrated",
+                    "useWin32Conhost": true
+                  },
+                  "serial": null
+                }
               },
-              "icon": "lucide-file",
-              "title": "4、Skill"
+              "pinned": true,
+              "icon": "terminal",
+              "title": "终端：~/s/AI_Coding"
             }
           }
         ]
@@ -70,13 +98,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Claude Code/4、Skill.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "4、Skill 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -209,21 +236,23 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "cd6b6cc920f3f0ae",
+  "active": "5c70f2afc21ea347",
   "lastOpenFiles": [
-    "Claude Code/2、Slash命令.md",
     "Claude Code/1、Claude Code入门.md",
+    "raw/assets/image-20260427220833065.png",
+    "raw/llm-wiki.md",
+    "raw/superpowers An agentic skills framework & software development methodology that works..md",
+    "Claude Code/3、记忆机制.md",
+    "raw",
     "Claude Code/7、Plugin.md",
     "Claude Code/6、MCP.md",
-    "未命名.base",
-    "未命名 1.base",
-    "Claude Code/4、Skill.md",
-    "Claude Code/5、Subagent.md",
-    "CLAUDE.md",
-    "Claude Code/3、记忆机制.md",
     "Obsidian 设置汇总.md",
-    "assets/Pasted image 20260429153454.png",
-    "assets/Pasted image 20260429152839.png",
+    "raw/assets/Pasted image 20260429153454.png",
+    "raw/assets/Pasted image 20260429152839.png",
+    "Claude Code/5、Subagent.md",
+    "Claude Code/2、Slash命令.md",
+    "Claude Code/4、Skill.md",
+    "CLAUDE.md",
     "每日笑话.md",
     "SKILL.md",
     "每日笑话/2026-04-29.md",
@@ -240,11 +269,8 @@
     "Claude Code/测试笔记3.md",
     "skills-lock.json",
     "测试笔记5.md",
-    "测试笔记4.md",
-    "测试笔记4“.md",
-    "未命名.md",
     "assets/Pasted image 20260429003241.png",
-    "assets/image-20260427232015230.png",
+    "raw/assets/image-20260427232015230.png",
     "assets/Pasted image 20260429003057.png",
     "附件/Pasted image 20260429002956.png",
     "附件",
