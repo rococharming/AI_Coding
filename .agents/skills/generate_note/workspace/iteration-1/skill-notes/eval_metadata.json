@@ -1,0 +1,6 @@
+{
+  "eval_id": 1,
+  "eval_name": "skill-notes",
+  "prompt": "请你结合 wiki 中所有有关 Skill 的知识点，帮我生成一篇关于 Skill 的笔记，生成到 /Users/11185032/spf/AI_Coding/Claude Code/ 同级目录下，命名为 8、Skill笔记",
+  "assertions": []
+}

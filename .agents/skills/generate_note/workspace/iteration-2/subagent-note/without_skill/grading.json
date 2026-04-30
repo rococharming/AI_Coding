@@ -1,0 +1,58 @@
+{
+  "eval_name": "subagent-note",
+  "config": "without_skill",
+  "filename": "Subagent笔记.md",
+  "expectations": [
+    {
+      "text": "文件已生成",
+      "passed": true,
+      "evidence": "文件存在，大小 5076 字节"
+    },
+    {
+      "text": "使用中文数字章节编号",
+      "passed": true,
+      "evidence": "找到 10 个匹配: ['# 一、', '# 二、', '# 三、']"
+    },
+    {
+      "text": "使用阿拉伯数字二级编号",
+      "passed": true,
+      "evidence": "找到 20 个匹配: ['## 1、', '## 2、', '## 3、']"
+    },
+    {
+      "text": "包含三级编号",
+      "passed": false,
+      "evidence": "未找到"
+    },
+    {
+      "text": "包含表格",
+      "passed": true,
+      "evidence": "约 15 个表格"
+    },
+    {
+      "text": "包含代码块",
+      "passed": true,
+      "evidence": "6 个代码块"
+    },
+    {
+      "text": "包含提示框",
+      "passed": true,
+      "evidence": "约 5 处提示框"
+    },
+    {
+      "text": "引用 wiki 知识",
+      "passed": true,
+      "evidence": "4 个双向链接: ['Claude_Code', 'Superpowers', 'Memory_System', '摘要-subagent']"
+    },
+    {
+      "text": "涵盖 Subagent 核心内容",
+      "passed": true,
+      "evidence": "概念: True, 内置: True, 创建: True"
+    },
+    {
+      "text": "使用简体中文",
+      "passed": true,
+      "evidence": "中文"
+    }
+  ],
+  "pass_rate": 0.9
+}

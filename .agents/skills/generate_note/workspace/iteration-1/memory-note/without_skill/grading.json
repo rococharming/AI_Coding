@@ -1,0 +1,33 @@
+{
+  "eval_name": "memory-note",
+  "config": "without_skill",
+  "filename": "记忆机制整理.md",
+  "expectations": [
+    {
+      "text": "文件已生成",
+      "passed": true,
+      "evidence": "文件存在，大小 5708 字节"
+    },
+    {
+      "text": "使用中文数字章节编号",
+      "passed": false,
+      "evidence": "未找到 # 一、 等一级标题"
+    },
+    {
+      "text": "包含表格",
+      "passed": true,
+      "evidence": "发现约 11 个表格"
+    },
+    {
+      "text": "涵盖 CLAUDE.md 和 auto memory",
+      "passed": true,
+      "evidence": "CLAUDE.md: True, Auto Memory: True"
+    },
+    {
+      "text": "使用简体中文",
+      "passed": true,
+      "evidence": "文件使用中文"
+    }
+  ],
+  "pass_rate": 0.8
+}

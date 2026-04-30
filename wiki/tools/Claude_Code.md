@@ -78,6 +78,45 @@ claude update
 **受保护路径**（任何模式下都不会自动写入）:
 `.git`, `.vscode`, `.idea`, `.husky`, `.claude`（除 `commands/skills/agents/worktrees` 子目录外）、`.gitconfig`, `.bashrc`, `.zshrc` 等配置文件。
 
+## Skills 系统
+
+Skills 是 Claude Code 的扩展机制，通过 `SKILL.md` 文件定义指令集，让 Claude 获得新能力。与始终加载的 `CLAUDE.md` 不同，Skills **按需加载**，长参考材料几乎无日常上下文成本。
+
+### 存储位置与作用域
+
+| 级别 | 路径 | 适用范围 |
+|------|------|----------|
+| Enterprise | managed settings 配置 | 组织内所有用户 |
+| Personal | `~/.claude/skills/<name>/SKILL.md` | 当前用户的所有项目 |
+| Project | `.claude/skills/<name>/SKILL.md` | 仅当前项目 |
+| Plugin | `<plugin>/skills/<name>/SKILL.md` | 插件启用处 |
+
+覆盖规则：Enterprise > Personal > Project。旧版 `.claude/commands/<name>.md` 仍可工作，但 Skills 支持更多特性（frontmatter、支持文件、自动加载）。
+
+### 自动发现
+
+- Claude Code 实时监控 skill 目录的增删改，当前会话内即时生效
+- 编辑子目录中的文件时，自动发现嵌套的 `.claude/skills/`（支持 monorepo）
+- `--add-dir` 目录中的 `.claude/skills/` 也会被加载
+
+### 捆绑技能（Built-in Skills）
+
+捆绑技能是基于 prompt 的 Skill（非固定逻辑），通过 `/` 调用：
+
+| 命令 | 功能 |
+|------|------|
+| `/batch <指令>` | 大规模并行改造，拆分任务到多个 worktree |
+| `/claude-api` | Claude API / Anthropic SDK 开发辅助 |
+| `/debug` | 开启调试日志排查问题 |
+| `/loop [间隔] [prompt]` | 循环运行 Prompt（别名: `/proactive`） |
+| `/simplify` | 检查代码复用、质量和效率问题 |
+
+### Skill 生命周期
+
+- Skill 被调用后，其内容作为单条消息进入会话并**持续存在**
+- 自动压缩（auto-compaction）时保留最近调用的 Skill，每 Skill 前 5000 tokens，共享 25000 tokens 预算
+- 如果 Skill 在压缩后似乎失效，可重新调用以恢复完整内容
+
 ## 常用 Slash 命令
 
 ### 会话与上下文
@@ -113,15 +152,6 @@ claude update
 | `/mcp` | 管理 MCP Server |
 | `/plugin` | 管理插件 |
 
-### 内置 Skill 命令
-| 命令 | 功能 |
-|------|------|
-| `/batch <指令>` | 大规模并行改造，拆分任务到多个 worktree |
-| `/claude-api` | Claude API / Anthropic SDK 开发辅助 |
-| `/debug` | 开启调试日志排查问题 |
-| `/loop [间隔] [prompt]` | 循环运行 Prompt（别名: `/proactive`） |
-| `/simplify` | 检查代码复用、质量和效率问题 |
-
 ## 用量统计说明
 
 `/usage` 输出字段解释：
@@ -134,5 +164,8 @@ claude update
 - [[Memory_System]] — 记忆系统（CLAUDE.md 与 Auto Memory）
 - [[Subagent]] — 子代理架构
 - [[Superpowers]] — Superpowers 技能框架
+- [[Agent_Skills]] — Agent Skills 开放标准
+- [[claude-code-skill-creation]] — Skill 创建与配置的详细指南
 - [[摘要-claude-code-intro]] — 入门素材来源
 - [[摘要-slash-commands]] — 命令速查素材来源
+- [[摘要-extend-claude-with-skills]] — Skills 系统素材来源

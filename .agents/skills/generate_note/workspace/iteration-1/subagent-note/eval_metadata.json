@@ -1,0 +1,6 @@
+{
+  "eval_id": 3,
+  "eval_name": "subagent-note",
+  "prompt": "结合 wiki 里关于子代理（Subagent）的知识，给我生成一篇笔记，存到 /Users/11185032/spf/AI_Coding/test_notes/ 目录下，文件名你自定",
+  "assertions": []
+}

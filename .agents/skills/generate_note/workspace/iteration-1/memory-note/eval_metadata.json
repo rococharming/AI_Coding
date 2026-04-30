@@ -1,0 +1,6 @@
+{
+  "eval_id": 2,
+  "eval_name": "memory-note",
+  "prompt": "帮我把 wiki 里关于记忆机制（CLAUDE.md 和 auto memory）的知识整理成一份笔记，放在 /Users/11185032/spf/AI_Coding/ 下，文件名叫 记忆机制整理.md",
+  "assertions": []
+}

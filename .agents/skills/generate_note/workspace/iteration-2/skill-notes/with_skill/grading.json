@@ -1,0 +1,58 @@
+{
+  "eval_name": "skill-notes",
+  "config": "with_skill",
+  "filename": "8、Skill笔记.md",
+  "expectations": [
+    {
+      "text": "文件已生成",
+      "passed": true,
+      "evidence": "文件存在，大小 5050 字节"
+    },
+    {
+      "text": "使用中文数字章节编号",
+      "passed": true,
+      "evidence": "找到 6 个匹配: ['# 一、', '# 二、', '# 三、']"
+    },
+    {
+      "text": "使用阿拉伯数字二级编号",
+      "passed": true,
+      "evidence": "找到 12 个匹配: ['## 1、', '## 2、', '## 1、']"
+    },
+    {
+      "text": "包含三级编号",
+      "passed": true,
+      "evidence": "找到 2 个匹配: ['### 1', '### 2']"
+    },
+    {
+      "text": "包含表格",
+      "passed": true,
+      "evidence": "约 25 个表格"
+    },
+    {
+      "text": "包含代码块",
+      "passed": true,
+      "evidence": "1 个代码块"
+    },
+    {
+      "text": "包含提示框",
+      "passed": true,
+      "evidence": "约 3 处提示框"
+    },
+    {
+      "text": "引用 wiki 知识",
+      "passed": true,
+      "evidence": "7 个双向链接: ['Claude_Code', 'Subagent', 'Superpowers', 'Memory_System', '摘要-slash-commands']"
+    },
+    {
+      "text": "包含关联笔记区域",
+      "passed": true,
+      "evidence": "包含关联笔记/连接区域"
+    },
+    {
+      "text": "使用简体中文",
+      "passed": true,
+      "evidence": "中文"
+    }
+  ],
+  "pass_rate": 1.0
+}

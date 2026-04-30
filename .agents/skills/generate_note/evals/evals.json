@@ -1,0 +1,97 @@
+{
+  "skill_name": "generate_note",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "请你结合 wiki 中所有有关 Skill 的知识点，帮我生成一篇关于 Skill 的笔记，生成到 /Users/11185032/spf/AI_Coding/Claude Code/ 同级目录下，命名为 8、Skill笔记",
+      "expected_output": "一篇符合 Claude Code/ 笔记风格的 Obsidian markdown 笔记，涵盖 Skill 的定义、分类、创建方式、触发机制等知识，使用中文数字编号章节、阿拉伯数字编号二级标题、大量表格整理信息、代码块展示示例。",
+      "files": [],
+      "assertions": [
+        {
+          "name": "文件已生成",
+          "description": "指定路径下存在生成的 markdown 文件"
+        },
+        {
+          "name": "使用中文数字章节编号",
+          "description": "内容包含 '# 一、' 或 '# 二、' 等中文数字编号的一级标题"
+        },
+        {
+          "name": "使用阿拉伯数字二级编号",
+          "description": "内容包含 '## 1、' 或 '## 2、' 等阿拉伯数字编号的二级标题"
+        },
+        {
+          "name": "包含表格",
+          "description": "笔记中至少包含一个 markdown 表格"
+        },
+        {
+          "name": "包含代码块",
+          "description": "笔记中至少包含一个代码块（```）"
+        },
+        {
+          "name": "引用 wiki 知识",
+          "description": "笔记内容体现了对 wiki 中 Skill 相关页面的阅读和引用"
+        },
+        {
+          "name": "使用简体中文",
+          "description": "笔记全文使用简体中文"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "帮我把 wiki 里关于记忆机制（CLAUDE.md 和 auto memory）的知识整理成一份笔记，放在 /Users/11185032/spf/AI_Coding/ 下，文件名叫 记忆机制整理.md",
+      "expected_output": "一篇结构清晰的笔记，整合 wiki 中 Memory_System 等相关页面的知识，按照 Claude Code/ 笔记风格编写，包含概述、核心概念、使用方法、注意事项等章节。",
+      "files": [],
+      "assertions": [
+        {
+          "name": "文件已生成",
+          "description": "指定路径下存在生成的 markdown 文件"
+        },
+        {
+          "name": "使用中文数字章节编号",
+          "description": "内容包含 '# 一、' 等中文数字编号的一级标题"
+        },
+        {
+          "name": "包含表格",
+          "description": "笔记中至少包含一个 markdown 表格"
+        },
+        {
+          "name": "涵盖 CLAUDE.md 和 auto memory",
+          "description": "笔记同时涉及 CLAUDE.md 和自动记忆两种机制"
+        },
+        {
+          "name": "使用简体中文",
+          "description": "笔记全文使用简体中文"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "结合 wiki 里关于子代理（Subagent）的知识，给我生成一篇笔记，存到 /Users/11185032/spf/AI_Coding/test_notes/ 目录下，文件名你自定",
+      "expected_output": "一篇关于 Subagent 的完整笔记，涵盖子代理的概念、内置类型、创建方式、配置参数、使用模式等内容，风格与 Claude Code/ 笔记一致。",
+      "files": [],
+      "assertions": [
+        {
+          "name": "文件已生成",
+          "description": "指定路径下存在生成的 markdown 文件"
+        },
+        {
+          "name": "使用中文数字章节编号",
+          "description": "内容包含 '# 一、' 等中文数字编号的一级标题"
+        },
+        {
+          "name": "包含表格",
+          "description": "笔记中至少包含一个 markdown 表格"
+        },
+        {
+          "name": "涵盖 Subagent 核心内容",
+          "description": "笔记包含子代理的概念、内置类型、创建方式等核心内容"
+        },
+        {
+          "name": "使用简体中文",
+          "description": "笔记全文使用简体中文"
+        }
+      ]
+    }
+  ]
+}
