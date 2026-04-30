@@ -4,52 +4,81 @@
     "type": "split",
     "children": [
       {
-        "id": "b3a1f994135a7e93",
-        "type": "tabs",
+        "id": "f4a7502dd4b78514",
+        "type": "split",
         "children": [
           {
-            "id": "5c70f2afc21ea347",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "terminal:terminal",
-              "state": {
-                "terminal:terminal": {
-                  "cwd": "/Users/11185032/spf/AI_Coding",
-                  "focus": false,
-                  "profile": {
-                    "args": [
-                      "--login"
-                    ],
-                    "executable": "/opt/homebrew/bin/fish",
-                    "followTheme": true,
-                    "name": "",
-                    "platforms": {
-                      "darwin": true
-                    },
-                    "pythonExecutable": "python3",
-                    "restoreHistory": false,
-                    "rightClickAction": "copyPaste",
-                    "successExitCodes": [
-                      "0",
-                      "SIGINT",
-                      "SIGTERM"
-                    ],
-                    "terminalOptions": {
-                      "documentOverride": null
-                    },
-                    "type": "integrated",
-                    "useWin32Conhost": true
+            "id": "b3a1f994135a7e93",
+            "type": "tabs",
+            "dimension": 32.78508771929825,
+            "children": [
+              {
+                "id": "50f9f6b0d36386ea",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "CLAUDE.md",
+                    "mode": "source",
+                    "source": false
                   },
-                  "serial": null
+                  "icon": "lucide-file",
+                  "title": "CLAUDE"
                 }
-              },
-              "pinned": true,
-              "icon": "terminal",
-              "title": "终端：~/s/AI_Coding"
-            }
+              }
+            ]
+          },
+          {
+            "id": "5a95ce960cf75b80",
+            "type": "tabs",
+            "dimension": 67.21491228070175,
+            "children": [
+              {
+                "id": "5c70f2afc21ea347",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "terminal:terminal",
+                  "state": {
+                    "terminal:terminal": {
+                      "cwd": "/Users/11185032/spf/AI_Coding",
+                      "focus": false,
+                      "profile": {
+                        "args": [
+                          "--login"
+                        ],
+                        "executable": "/opt/homebrew/bin/fish",
+                        "followTheme": true,
+                        "name": "",
+                        "platforms": {
+                          "darwin": true
+                        },
+                        "pythonExecutable": "python3",
+                        "restoreHistory": false,
+                        "rightClickAction": "copyPaste",
+                        "successExitCodes": [
+                          "0",
+                          "SIGINT",
+                          "SIGTERM"
+                        ],
+                        "terminalOptions": {
+                          "documentOverride": null
+                        },
+                        "type": "integrated",
+                        "useWin32Conhost": true
+                      },
+                      "serial": null
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "terminal",
+                  "title": "终端：✳ Separate wiki directory from Claude Code"
+                }
+              }
+            ]
           }
-        ]
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -98,12 +127,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "CLAUDE.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "CLAUDE 的大纲"
             }
           },
           {
@@ -236,10 +266,12 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "5c70f2afc21ea347",
+  "active": "2f214d9719af6425",
   "lastOpenFiles": [
+    "raw/Karpathy's LLM Wiki Changes Everything LLMWiki andrejkarpathy knowledgemanagement.md",
+    "CLAUDE.md",
     "Claude Code/1、Claude Code入门.md",
-    "raw/assets/image-20260427220833065.png",
+    "assets/image-20260427220833065.png",
     "raw/llm-wiki.md",
     "raw/superpowers An agentic skills framework & software development methodology that works..md",
     "Claude Code/3、记忆机制.md",
@@ -247,12 +279,11 @@
     "Claude Code/7、Plugin.md",
     "Claude Code/6、MCP.md",
     "Obsidian 设置汇总.md",
-    "raw/assets/Pasted image 20260429153454.png",
-    "raw/assets/Pasted image 20260429152839.png",
+    "assets/Pasted image 20260429153454.png",
+    "assets/Pasted image 20260429152839.png",
     "Claude Code/5、Subagent.md",
     "Claude Code/2、Slash命令.md",
     "Claude Code/4、Skill.md",
-    "CLAUDE.md",
     "每日笑话.md",
     "SKILL.md",
     "每日笑话/2026-04-29.md",
@@ -270,7 +301,7 @@
     "skills-lock.json",
     "测试笔记5.md",
     "assets/Pasted image 20260429003241.png",
-    "raw/assets/image-20260427232015230.png",
+    "assets/image-20260427232015230.png",
     "assets/Pasted image 20260429003057.png",
     "附件/Pasted image 20260429002956.png",
     "附件",
